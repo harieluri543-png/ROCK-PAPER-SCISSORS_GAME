@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROCK PAPER SCISSORS</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+</head>
+<body>
+    <h1>ROCK-PAPER-SCISSORS</h1>
+
+    <div id ="choices">
+    <button onclick="playgame('rock')">✊</button>
+    <button onclick="playgame('paper')">✋</button>
+    <button onclick="playgame('scissors')">✌️</button>
+    </div>
+
+     
+
+
+    <div id = "playerdisplay">PLAYER   :</div>
+    <div id = "computerdisplay">COMPUTER :</div>
+    <div id = "resultdisplay"></div>
+
+    <div class = "scoredisplay">PLAYER SCORE:
+        <span id="playerscoredisplay">0</span>
+    </div>
+
+
+    <div class = "scoredisplay">COMPUTER SCORE:
+        <span id="computerscoredisplay">0</span>
+    </div>
+
+    <div id = "winnerdisplay"></div>
+
+    <div>
+    <button id="playAgainBtn" onclick="playAgain()">
+         Play Again
+    </button>
+</div>
+
+    <div id = "rules"> <h2>Rules:</h2>
+        <ul>
+       <li> Rock beats Scissors (crushes them).</li>
+       <li> Scissors beats Paper (cuts it)</li>
+       <li> Paper beats Rock (covers it)</li>
+       <li> Identical moves result in a tie</li>
+       </ul>
+    </div >
+       
+<div id="leftPanel">
+    
+        <h4>🏆 First to reach 10 points wins!</h4>
+        <ul>
+            <li>Scissors : Represented by (✌️)</li>
+            <li>Paper :Represented by palm(✋)</li>
+            <li>Rock : Represented by fist  (✊)</li>
+
+
+
+        </ul>
+       
+        
+    
+
+  
+</div>
+
+
+
+    <script src ="app.js"></script>
+    
+</body>
+</html>
